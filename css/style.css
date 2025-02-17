@@ -261,41 +261,100 @@ background-color: #000000d7;
 /*   Div Cardapio  */
 
 .titulo-cardapio{
-  background-color: #2f302f36;
-      display: flex;
-      justify-content: center;
-      justify-items: center;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: #00000062;
+    
+    }
+    .titulo-cardapio h1{
+      color: white;
+      text-align: center;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 25px;
+        
+    }
+.box-icone-cardapio{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+    .iconeCardapio{
+      background-color: #ffffff;
   
-  }
-  .titulo-cardapio h1{
-  color: white;
-    text-align: center;
-    font-size: 20px;
+      margin-top: 20px;
+      color: white;
       
-  }
-  
-  .container-cardapio{
+    }
+
+    .container-cardapio{
       height: 500px;
       display: flex;
       justify-content: center;
       justify-items: center;
-      background-color: #aa5cbbd3;
-  }
-  .box-cardapio{
+    }
+    .box-cardapio{
       margin-top: 30px;
       text-align: justify;
-      background-color: #a1a89f;
+     justify-items: center;
       width: 500px;
-  
-  }
-  
-  .box-cardapio p{
-      margin-top: 30px;
+    
+    }
+    
+    .box-cardapio p{
+      font-size: 13px;
+      margin-top: 0px;
       text-align: center;
-      background-color: #2db903;
-      width: 500px;
-  
-  }
+      line-height: 1.5;
+      color: white;
+      width: 400px;
+    
+    }
+    
+.pratos-animados2 {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center; /* Centraliza os pratos horizontalmente */
+  align-items: center; /* Centraliza os pratos verticalmente */
+  animation: moverPratos 0s linear infinite; /* Define a animação */
+}
+
+.prato {
+  margin: 20px; /* Espaçamento entre os pratos */
+}
+
+.prato img {
+  border: 5px solid rgb(255, 255, 255);
+  transition: transform 0.3s ease;
+  width: 200px; /* Largura das imagens */
+  height: auto; /* Altura automática */
+}
+
+.prato img:hover{
+ 
+  transform: scale(1.2);
+}
+.botao-reserva  {
+ 
+ /* Transforma o link em um elemento de bloco */
+  padding: 2px; /* Define o espaçamento interno do botão */
+  background-color: rgb(92, 90, 90); /* Define a cor de fundo do botão */
+  color: #fff; /* Define a cor do texto do botão */
+  text-decoration: none; /* Remove o sublinhado do link */
+  border-radius: 5px; /* Arredonda os cantos do botão */
+  /* Deixa o texto em negrito */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor de fundo */
+}
+
+.botao-reserva:hover {
+ 
+  background-color: rgba(250, 250, 250, 0.13); /* Altera a cor de fundo quando o mouse passa por cima */
+}
+
   
 
 
