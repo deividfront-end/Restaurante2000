@@ -23,8 +23,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: #2db903; /* Cor do WhatsApp */
     box-shadow: 0px 2px 5px rgb(255, 255, 255);
@@ -40,8 +40,8 @@
   
   
   .whatsapp-button:hover {
-    width: 61px;
-    height: 61px;
+    width: 51px;
+    height: 51px;
     background-color: #05941de0;
     box-shadow: 1px 2px 5px rgba(30, 255, 0, 0.521);
   }
@@ -554,8 +554,28 @@
   }
   
    .titulo-inicio h1{
-    font-size: 25px;
+    font-size: 20px;
    }
+
+   .titulo-servico h1{
+    font-size: 20px;
+   }
+   .titulo-horario h1{
+    font-size: 20px;
+   }
+   .titulo-cardapio h1{
+    font-size: 20px;
+   }
+   
+   .titulo-contato h1{
+    font-size: 20px;
+   }
+
+
+
+
+
+
   
 .container-inicio{
   height: 360px;
@@ -574,12 +594,13 @@
 }
 
 .box-inicio p{
-font-size: 13px;
+  margin-left: 20px;
+font-size: 12px;
   margin-top: 30px;
   text-align: center;
   line-height: 1.5;
   color: white;
-  width: 400px;
+  width: 350px;
 
 }
 
@@ -644,6 +665,65 @@ font-size: 13px;
 .container-contato p{
   font-size: 10px;
   width: 200px;
+}
+
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2db903; /* Cor do WhatsApp */
+  box-shadow: 0px 2px 5px rgb(255, 255, 255);
+  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+  font-size: 30px; /* Tamanho do ícone */
+  color: #fff; /* Cor do ícone */
+}
+
+
+
+.whatsapp-button:hover {
+  width: 51px;
+  height: 51px;
+  background-color: #05941de0;
+  box-shadow: 1px 2px 5px rgba(30, 255, 0, 0.521);
+}
+
+
+
+.botao-voltar {
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  background-color: #ff5e00; /* Cor do WhatsApp */
+  box-shadow: 1px 2px 5px rgb(255, 255, 255);
+  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+  font-size: 30px; /* Tamanho do ícone */
+  color: #fff; /* Cor do ícone */
+}
+
+.botao-voltar img {
+  width: 41px;
+  
+}
+
+
+.botao-voltar:hover {
+  width: 51px;
+  height: 51px;
+  background-color: #ff0000e0;
+  box-shadow: 1px 2px 5px rgb(255, 255, 255);
 }
 
 
