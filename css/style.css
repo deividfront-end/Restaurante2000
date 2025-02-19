@@ -59,7 +59,7 @@
     height: 50px;
     border-radius: 2px;
     background-color: #ff5e00; /* Cor do WhatsApp */
-    box-shadow: 0px 2px 5px rgb(0, 0, 0);
+    box-shadow: 1px 2px 5px rgb(255, 255, 255);
     z-index: 1000; /* Garante que o botão fique acima de outros elementos */
     font-size: 30px; /* Tamanho do ícone */
     color: #fff; /* Cor do ícone */
@@ -75,6 +75,7 @@
     width: 51px;
     height: 51px;
     background-color: #ff0000e0;
+    box-shadow: 1px 2px 5px rgb(255, 255, 255);
   }
   
   
@@ -520,10 +521,19 @@
   @media (max-width: 415px) {
    
   
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url(../img/fundo.jpg);
+      box-sizing: border-box;
+      background-size:contain;
+      background-repeat: repeat;
+    }
     nav {
       display: flex;
       flex-direction: column;
       align-items: center!important;
+     
       gap: 5px;
       width: 50%;
       text-align: center;
@@ -531,6 +541,7 @@
   }
   
   nav a {
+    margin-left: 80px;
       font-size: 18px;
       padding: 5px;
       text-align: center;
@@ -542,7 +553,9 @@
       justify-content: center;
   }
   
-   
+   .titulo-inicio h1{
+    font-size: 25px;
+   }
   
 .container-inicio{
   height: 360px;
