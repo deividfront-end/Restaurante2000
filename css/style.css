@@ -45,10 +45,47 @@
     background-color: #05941de0;
     box-shadow: 1px 2px 5px rgba(30, 255, 0, 0.521);
   }
+
+
+
+  .botao-voltar {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #ff5e00; /* Cor do WhatsApp */
+    box-shadow: 0px 2px 5px rgb(0, 0, 0);
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+    font-size: 30px; /* Tamanho do ícone */
+    color: #fff; /* Cor do ícone */
+  }
+  
+  .botao-voltar img {
+    width: 41px;
+    
+  }
   
   
+  .botao-voltar:hover {
+    width: 51px;
+    height: 51px;
+    background-color: #ff0000e0;
+  }
+  
+  
+  
+  .logo{
+    
+    width: 110px;
+    height: 90px;
+  }
 .container-menu {
-background-color: #000000d7;
+    background-color: #000000d7;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -185,10 +222,11 @@ background-color: #000000d7;
  
 
     .container-servico{
-      height: 500px;
+      height: 600px;
       display: flex;
       justify-content: center;
       justify-items: center;
+    
     }
     .box-servico{
       margin-top: 30px;
@@ -401,16 +439,39 @@ background-color: #000000d7;
   }
   
   .box-contato p{
-    font-size: 13px;
+    font-size: 14px;
     margin-top: 20px;
     margin-bottom: 10px;
     text-align: center;
     line-height: 1.8;
     color: white;
-    width: 400px;
-  
+    width: 300px;
   }
   
+.container-mapa{
+  margin-top: -250px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: #ffffff2d;
+  height: 300px;
+  
+}
+
+
+ 
+ #map { 
+ 
+   margin-left: 0px;
+   margin-right: 0px;
+   width: 100%;
+   justify-items: center;
+    
+
+   
+ }
+ 
 
 
 
@@ -422,10 +483,10 @@ background-color: #000000d7;
     justify-items: center;
     text-align: center;
     color: #ffffff;
-    background-color:#000000af; 
+    background-color:#000000; 
     gap: 5px;
     padding-top: 20px;
-    padding-bottom: 1px;
+   
   }
   
   
@@ -438,7 +499,7 @@ background-color: #000000d7;
     justify-items: center;
     text-align: center;
     color: #ffffff;
-    background-color:#000000af; 
+    background-color:#000000; 
     margin-bottom: 0px;
     font-size: 12px;
     padding-top: 5px;
@@ -457,93 +518,121 @@ background-color: #000000d7;
 
 
   @media (max-width: 415px) {
-    body {
-        background-size: contain; /* Garante que a imagem de fundo cubra a tela */
-    }
+   
   
     nav {
       display: flex;
-      justify-items: center;
-        /* Links em coluna */
-        align-items: center;
-        gap: 5px; /* Espaçamento menor entre os links */
-    }
+      flex-direction: column;
+      align-items: center!important;
+      gap: 5px;
+      width: 50%;
+      text-align: center;
+      justify-items: center!important;
+  }
   
-    nav a {
-        font-size: 18px; /* Tamanho de fonte menor */
-        padding: 5px; /* Padding menor */
-        background-color: #0000002d;
-        width: 70px;
-        text-align: center!important;
-        box-shadow: 1px 1px 1px rgb(255, 255, 255)!important;
-    }
-    nav a:hover {
-      font-size: 12px; /* Tamanho de fonte menor */
-      
-      width: 50px!important;
+  nav a {
+      font-size: 18px;
+      padding: 5px;
+      text-align: center;
+      background-color: #ffffff13;
+      width: 80px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
    
-  }
   
-    .container-slider {
-      height: 490px;
-        margin-top: -20px;
-      
-    }
-  
-    .titulo-inicio {
-      margin-top: -10px;
-      margin-bottom: 40px!important;
-        font-size: 18px;
-      
-    }
-  
-    
-     p {
-     
-      margin-top: 30px;
-      font-size: 12px;
-  }  
+.container-inicio{
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 400px;
+
+}
+.box-inicio{
+  margin-top: 30px;
+  text-align: justify;
+  justify-items: center;
+  width: 400px;
+
+}
+
+.box-inicio p{
+font-size: 13px;
+  margin-top: 30px;
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+  width: 400px;
+
+}
+
+.pratos-animados{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 300px!important;
+}
+.prato img{
+  width: 90px;
+  height: 90px;
+}
 
 
-  
-.whatsapp-button {
- 
-    background-color: #8c00ff8f; /* Cor do WhatsApp */
-    box-shadow: 0px 2px 5px rgb(255, 255, 255);
-   
-  }
-  
-  .container-redes {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    color: #ffffff;
-    background-color:#9900ffaf; 
-    gap: 5px;
-    padding-top: 20px;
-    padding-bottom: 1px;
-  }
-  
-  
-  
-  /*Estilização Container Rodapé*/
-  .container-rodape {
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    color: #ffffff;
-    background-color:#9900ffaf; 
-    margin-bottom: 0px;
-    font-size: 12px;
-    padding-top: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+.container-cardapio{
+  width: 415px;
+  height: 390px;
+}
+
+.box-cardapio{
+  border: 2px solid rgb(255, 255, 255);
+  width: 415px;
+  height: 395px;
+}
+.tabela{
+  width: 415px!important;
+  font-size: 8px;
+  height:350px ;
+}
+
+.container-horario{
+  height: 400px;
+}
 
 
-@media (max-width: 415px) {
+
+.container-servico{
+  height: 390px;
+}
+
+.container-servico p{
+  font-size: 10px;
+  width: 200px;
+}
+
+.box-inicio p{
+  font-size:10px ;
+  width: 200px;
+}
+
+
+.container-horario p{
+  font-size: 10px;
+  width: 200px;
+}
+.container-horario{
+  height: 340px;
+}
+
+
+.container-contato p{
+  font-size: 10px;
+  width: 200px;
+}
+
 
 
 
@@ -553,9 +642,3 @@ background-color: #000000d7;
 
 
 }
-
-
-
-
-
-

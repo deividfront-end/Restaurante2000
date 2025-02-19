@@ -5,18 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
     <link rel="stylesheet" href="./css/style.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
 </head>
 <body>
 
     <a href="https://wa.me/SEU_NUMERO_DE_TELEFONE" target="_blank" class="whatsapp-button">
-        <img src="./img/contato logo.png" alt="WhatsApp">
+        <img  src="./img/contato logo.png"  alt="WhatsApp">
+
       </a>
+      
+ <a href="/index.html" target="_blank" class="botao-voltar">
+        <img  src="./img/home.png"  alt="voltar Inicio"></a>
+
+
+
+
+
 
         <div class="container-menu" id="menu">
 
-            <img class="logo" src="./img/Logo Restaurante.png"width="150px" height="100px" alt="logo">
+            <img class="logo" src="./img/Logo Restaurante.png" alt="logo">
             <nav>
-                <a class="home" href="./index.html">Inicio</a>
+                <a class="home" href="./index.html">Início</a>
                 <a class="projects" href="#servico">Serviços</a>
                 <a class="about" href="#cardapio">Cardápio</a>
                 <a class="contact" href="#horario">Horário</a>
@@ -137,7 +150,7 @@
     Batata doce <br><br> Costela ao molho <br><br> Polenta c/molho<br><br>
     Revirado d/feijão<br><br> Nhoque c/molho <br><br>Peixe <br><br>Carnes no/disco </div>
 
-  <div class="quinta" ><Mark>Quinta</Mark><br><br>
+  <div class="quinta" ><Mark>Quinta</Mark><br><br>Arroz <br><br>
     Arroz <br><br>Feijão <br><br>Macarrão <br><br>Almôndegas <br><br>
     Lasanha <br><br>Linguiça <br><br>Purê d/batatas<br><br>Carne moída c/molho
     <br><br>Farofa <br><br>Batata doce <br><br>Peixe <br><br>Carnes no/disco</div>
@@ -165,7 +178,9 @@
 </div>
 
        
-    
+</div>
+</div>
+
    
 </div>
 </div>
@@ -215,33 +230,38 @@
 
 
 </div>
+
+
+
 </div>
 
+<div class="container-mapa">
+  <div class="mapa-box" id="map">
+    
+    </div>
+  </div>
+  
 
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+      <script>
+       var map = L.map('map').setView([-27.55742678592968, -50.842588633738266], 13);
 
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
 
+var marker = L.marker([-27.55742678592968, -50.842588633738266]).addTo(map);
 
+// Abre o popup e adiciona o evento de clique
+marker.bindPopup("<b>Restaurante &<br> Lanchonete 2000</b>").openPopup().on('click', function() {
+    // Redireciona para o Google Maps com as coordenadas do marcador
+    window.open('https://www.google.com/maps/search/?api=1&query=' + marker.getLatLng().lat + ',' + marker.getLatLng().lng, '_blank');
+});
 
+      </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 
 
         <footer> 
@@ -263,7 +283,7 @@
                       
                 </div>
                 </footer>
-
+                
     
 </body>
 </html>
