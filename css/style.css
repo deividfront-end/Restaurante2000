@@ -148,18 +148,19 @@
 }
 
 .container-inicio{
-    height: 500px;
+    height: 220px;
     display: flex;
     justify-content: center;
     justify-items: center;
  
 }
 .box-inicio{
-    margin-top: 30px;
+    margin-top: 60px;
     text-align: justify;
     justify-items: center;
     width: 500px;
 
+    height: 150px;
 }
 
 .box-inicio p{
@@ -169,20 +170,29 @@
     line-height: 1.5;
     color: white;
     width: 400px;
+ 
+
+}
+
+.container-pratos{
+
+display: flex;
+justify-content: center;
+justify-items: center;
+
 
 }
 .pratos-animados {
+
    margin-top: 20px;
    display: flex;
- justify-content: center;
+  justify-content: center;
   align-items: center;
    animation: moverPratos 15s linear infinite;
+
   }
   
-  .prato {
-  margin: 20px;
-  }
-  
+
   .prato img {
   border: 5px solid rgb(255, 255, 255);
    width: 200px;
@@ -190,9 +200,9 @@
   }
   
   @keyframes moverPratos {
-  0% { transform: translateX(-200px); }
-  50% { transform: translateX(200px); }
-  100% { transform: translateX(-200px); }
+  0% { transform: translateX(-100px); }
+  50% { transform: translateX(100px); }
+  100% { transform: translateX(-100px); }
   }
   
   .pratos-animados:hover {
@@ -578,11 +588,12 @@
 
   
 .container-inicio{
-  height: 360px;
+  height: 210px;
   display: flex;
   justify-content: center;
   justify-items: center;
   width: 400px;
+  margin-bottom: 2px;
 
 }
 .box-inicio{
@@ -590,7 +601,7 @@
   text-align: justify;
   justify-items: center;
   width: 400px;
-
+height: 200px;
 }
 
 .box-inicio p{
@@ -603,18 +614,61 @@ font-size: 12px;
   width: 350px;
 
 }
-
-.pratos-animados{
+.container-pratos {
   display: flex;
   justify-content: center;
-  justify-items: center;
-  width: 300px!important;
-}
-.prato img{
-  width: 90px;
-  height: 90px;
+  align-items: center; /* Use align-items for flexbox */
+ 
+  padding: 0px; /* Add some padding for better spacing */
 }
 
+.pratos-animados {
+  max-width: 90%; /* Use a percentage for width */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: moverPratos 15s linear infinite;
+  flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+}
+
+.prato { /* Use a class for individual plates */
+  margin: 10px; /* Add margin between plates */
+  display: flex; /* Ensure the image and potentially other content within a plate are aligned */
+  justify-content: center;
+  align-items: center;
+}
+
+.prato img {
+  border: 5px solid rgb(255, 255, 255);
+  width: 90px;
+  height: 90px;
+  max-width: 100%; /* Make sure image scales down if needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@keyframes moverPratos {
+  0% { transform: translateX(-20%); } /* Use percentages for translation */
+  50% { transform: translateX(20%); }
+  100% { transform: translateX(-20%); }
+}
+
+.pratos-animados:hover {
+  animation-play-state: paused;
+}
+
+/* Media query for smaller screens (optional) */
+@media (max-width: 768px) {
+  .pratos-animados {
+    gap: 10px;
+      /* Stack gapitems vertically on smaller screens */
+      align-items: center;
+  }
+
+  .prato {
+      margin: 10px 0; /* Adjust margins for vertical stacking */
+  }
+}
 
 .container-cardapio{
   width: 415px;
