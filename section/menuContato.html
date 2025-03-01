@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/Logo Restaurante.png" type="image/x-icon">
+      
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+</head>
+<body>
+    <a href="https://wa.me/SEU_NUMERO_DE_TELEFONE" target="_blank" class="whatsapp-button">
+        <img  src="../img/contato logo.png"  alt="WhatsApp">
+
+      </a>
+
+      <div class="container-menu">
+
+        <header>
+            <div class="logo"> <img src="../img/Logo Restaurante.png" width="150px" height="120px" > </div>
+            <nav>
+                <button class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="../section/menuServicos.html" class="nav-link">Reservas</a></li>
+                    <li class="nav-item"><a href="../section/menuHorario.html" class="nav-link">Horário</a></li>
+                    <li class="nav-item"><a href="../section/menuContato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+
+
+    </div>
+
+        <div class="titulo-contato" id="contato">
+            <h1>Fale Conosco!</h1>
+        </div>
+        
+        <div class="container-contato">
+        <div class="box-contato">
+        
+        
+            <p>
+              Entre em contato conosco por telefone ou WhatsApp para que possamos te atender de forma mais personalizada.
+              Para reservas, recomendamos que entre em contato com antecedência para garantir a disponibilidade da mesa.
+              Estamos esperando por você!<br>
+              <img class="logo" src="../img/Logo Restaurante.png"width="230px" height="200px" alt="logo">
+            </p>
+        
+        
+        
+        </div>
+        
+        
+        
+        </div>
+        
+        <div class="container-mapa">
+          <div class="mapa-box" id="map">
+            
+            </div>
+          </div>
+          
+        
+              <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+              <script>
+               var map = L.map('map').setView([-27.55742678592968, -50.842588633738266], 13);
+        
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+        
+        var marker = L.marker([-27.55742678592968, -50.842588633738266]).addTo(map);
+        
+        // Abre o popup e adiciona o evento de clique
+        marker.bindPopup("<b>Restaurante &<br> Lanchonete 2000</b>").openPopup().on('click', function() {
+            // Redireciona para o Google Maps com as coordenadas do marcador
+            window.open('https://www.google.com/maps/search/?api=1&query=' + marker.getLatLng().lat + ',' + marker.getLatLng().lng, '_blank');
+        });
+        
+              </script>
+        
+            </div>
+        
+            <div  class="container-rodape-box">
+                <footer> 
+                    <div class="container-redes" id="contact">
+                        
+                        <div class="rede-instam"> <a href="https://www.instagram.com/restaurante.2000/"target="_blank" ><img class="img-logo-instagram" src="../img/instagram logo.png"width="42px" height="42px" alt="logo Instagram"></a>   
+                        </div>
+                
+                    
+                        <div class="rede-gitHub"><a href="#"target="_blank" > <img class="img-logo-gitHub" src="../img/contato logo.png"width="42px" height="42px" alt="logo whatss"></a>  
+                        </div>
+                
+                    </div>
+                    
+                        <div class="container-rodape" id="rodape">
+                          
+                                <a href="https://deividfront-end.github.io/Meu-Portifolio/"target="_blank"> ©Restaurante & Lanchonete 2000 &swarhk;</a>
+                                
+                              
+                        </div>
+                        </footer>
+            </div>
+            
+        </body>
+        <script src="../js/scriptMenuHB.js"></script>
+        </html>
