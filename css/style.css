@@ -518,7 +518,7 @@ nav ul {
   top: 120px;
   left: 0;
   text-align: center;
-  background-image: url(/img/fundo.jpg);
+  background-image: url(../img/fundo.jpg);
   background-size:cover;
 }
 
