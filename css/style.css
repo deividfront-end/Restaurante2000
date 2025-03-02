@@ -13,6 +13,10 @@ background-size: cover;
 background-repeat: no-repeat;
 }
 
+
+/* PERSONALIZA BOTAO WHATSAPPP */
+
+
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -42,7 +46,7 @@ background-repeat: no-repeat;
   box-shadow: 1px 2px 5px rgba(30, 255, 0, 0.521);
 }
 
-
+/* PERSONALIZA CONTAINER MENU */
 .container-menu{
   background-color: #000000;
   display: flex;
@@ -85,8 +89,6 @@ nav li:hover {
 }
 
 
-
-
 nav li {
   margin-left: 20px;
 }
@@ -117,7 +119,7 @@ nav a {
 
 
 
-/*   Div Titulo  */
+/* PERSONALIZA MENU INICIO PRINCIPAL */
 
 .titulo-inicio{
     height: 64px;
@@ -197,7 +199,7 @@ background-color: #000000a0;
     }
 
 
-/*   Div Serviços  */
+/* PERSONALIZA MENU RESERVAS/SERVICO */
 
 .titulo-servico{
   padding: 0px;
@@ -292,7 +294,7 @@ background-color: #000000a0;
 
    
 
-/*   Div Horario  */
+/* PERSONALIZA MENU HORARIO PRINCIPAL */
 
 .titulo-horario{
  height: 64px;
@@ -362,7 +364,7 @@ background-color: #000000a0;
 
 
 
-/*   Div Contato  */
+/* PERSONALIZA MENU CONTATO */
 
 .titulo-contato{
   height: 64px;
@@ -435,7 +437,7 @@ background-color: #000000a0;
    
  }
  
-  /*Estilização Container Redes*/
+/* PERSONALIZA RODAPE  */
 
 .container-redes {
     display: flex;
@@ -450,9 +452,6 @@ background-color: #000000a0;
    
   }
   
-  
-  
-  /*Estilização Container Rodapé*/
 .container-rodape {
   height: 40px;
   display: flex;
@@ -475,7 +474,7 @@ background-color: #000000a0;
   
 
 
-
+/* PERSONALIZA RESPONSIVIDADE PARA MOBIL */
 
 @media (max-width: 415px) {
    
@@ -488,6 +487,38 @@ background-color: #000000a0;
   background-size:contain!important;
   background-repeat:repeat;
   }
+
+
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2db903; /* Cor do WhatsApp */
+    box-shadow: 0px 2px 5px rgb(255, 255, 255);
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+    font-size: 30px; /* Tamanho do ícone */
+    color: #fff; /* Cor do ícone */
+  }
+  
+  .whatsapp-button:hover {
+    width: 51px;
+    height: 51px;
+    background-color: #05941de0;
+    box-shadow: 1px 2px 5px rgba(30, 255, 0, 0.521);
+  }
+
+
+
+
+/* PERSONALIZA MENU INICIO PRINCIPAL RESPONSIVO */
+
+
   .container-menu {
     background-color: #000000;
     display: flex;
@@ -582,67 +613,15 @@ nav a {
 }
 
 
-.titulo-servico{
-  margin-top: 0px;
-  margin-bottom: 0px!important;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  background-color: #f40e0ede;
-  padding: 20px;
-}
+.titulo-inicio h1{
+  font-size: 23px;
+ color: #ffffff;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif!important;
+
+ }
 
 
-
-.titulo-horario{
-  margin-top: 0px;
-  margin-bottom: 30px!important;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  background-color: #f40e0ede;
-  padding: 20px;
-}
-
-
-
-.titulo-contato{
-  margin-top: 0px;
-  margin-bottom: 30px!important;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  background-color: #f40e0ede;
-  padding: 20px;
-}
-
-
-
-   .titulo-inicio h1{
-    font-size: 23px;
-   color: #ffffff;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif!important;
-  
-   }
-
-   .titulo-servico h1{
-    font-size: 20px;
-   color: #ffffff;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif!important;
-   }
-
-   .titulo-horario h1{
-    font-size: 20px;
-   }
-   .titulo-cardapio h1{
-    font-size: 20px;
-   }
-   
-   .titulo-contato h1{
-    font-size: 20px;
-   }
-
-.container-inicio {
+ .container-inicio {
   padding-top: 20px;
   margin-bottom: 0;
   margin-top: 50px;
@@ -662,6 +641,8 @@ nav a {
   align-items: center; /* Adicionado para centralizar horizontalmente */
 }
 
+
+
 .box-inicio p {
   font-size: 15px!important;
   margin-top: -20px;
@@ -670,21 +651,18 @@ nav a {
   color: white;
   height: 200px;
   width: 290px!important;
-
-padding: 20px;
+  padding: 20px;
   margin-bottom: 0px; /* Mantém o limite máximo */
 }
 
 
-
-
-.container-main {
+.container-main{
   display: flex;
   margin-top: 0px;
   justify-content: center;
- background-color: #000000f9;
-  padding-bottom: 0px;
-  
+  justify-items: center;
+  background-color: #000000fe!important;
+  padding-bottom: 20px;
 }
 
 .pratos-animados2 {
@@ -700,7 +678,7 @@ padding: 20px;
   align-items: center;
   margin-bottom: 0px;
   padding: 0;
-  
+  background-color: none;
 }
 
 .pratos-animados {
@@ -711,6 +689,7 @@ padding: 20px;
   animation: moverPratos 15s linear infinite;
   flex-wrap: wrap;
  
+
 }
 
 .prato {
@@ -744,7 +723,32 @@ padding: 20px;
 }
 
 
-.container-servico{
+
+
+
+
+
+/* PERSONALIZA MENU RESERVA/SERVICO RESPONSIVO */
+
+
+.titulo-servico{
+  margin-top: 0px;
+  margin-bottom: 0px!important;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: #f40e0ede;
+  padding: 20px;
+}
+
+.titulo-servico h1{
+  font-size: 20px;
+ color: #ffffff;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif!important;
+ }
+
+
+ .container-servico{
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -753,25 +757,6 @@ padding: 20px;
   margin-top: 0px;
   background-color: #000000f8;
   padding-bottom: 13px;
-}
-
-
-.container-main{
-  display: flex;
-  margin-top: 0px;
-  justify-content: center;
-  justify-items: center;
-  background-color: #000000ea!important;
-  padding-bottom: 20px;
-}
-
-.container-main2{
-  display: flex;
-  margin-top: 0px;
-  justify-content: center;
-  justify-items: center;
-  background-color: #000000f8!important;
-  padding-bottom: 20px;
 }
 
 
@@ -794,10 +779,58 @@ padding: 20px;
 
 
 
-.box-inicio p{
-  font-size:10px ;
-  width: 200px;
+.container-main2{
+  display: flex;
+  margin-top: 0px;
+  justify-content: center;
+  justify-items: center;
+  background-color: #000000f8!important;
+  padding-bottom: 20px;
 }
+
+
+
+
+
+
+/* PERSONALIZA MENU HORARIO RESPONSIVO */
+
+
+
+.titulo-horario{
+  margin-top: 0px;
+  margin-bottom: 30px!important;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: #f40e0ede;
+  padding: 20px;
+}
+
+
+.titulo-horario h1{
+  font-size: 20px;
+ }
+
+
+
+
+
+/* PERSONALIZA MENU CONTATO RESPONSIVO */
+
+.titulo-contato{
+  margin-top: 0px;
+  margin-bottom: 30px!important;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: #f40e0ede;
+  padding: 20px;
+}
+
+   .titulo-contato h1{
+    font-size: 20px;
+   }
 
 
 .container-horario{
@@ -836,25 +869,6 @@ padding: 20px;
   margin-bottom: 20px!important;
 }
 
-
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #2db903; /* Cor do WhatsApp */
-  box-shadow: 0px 2px 5px rgb(255, 255, 255);
-  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
-  font-size: 30px; /* Tamanho do ícone */
-  color: #fff; /* Cor do ícone */
-}
-
- 
 #map { 
  
   margin-left: 0px;
@@ -862,25 +876,22 @@ padding: 20px;
   width: 100%;
   justify-items: center;
    
-
-  
 }
 
 
-.whatsapp-button:hover {
-  width: 51px;
-  height: 51px;
-  background-color: #05941de0;
-  box-shadow: 1px 2px 5px rgba(30, 255, 0, 0.521);
-}
 
+/* PERSONALIZA RODAPE RESPONSIVO */
 .container-rodape-box{
   display: flex;
   justify-content: center;
   justify-items: center;
   width: auto;
-  background-color: #000000;
+  background-color: #0f0e0e;
   
+}
+
+.container-redes, .container-rodape{
+  background-color:transparent!important;
 }
 
 }
